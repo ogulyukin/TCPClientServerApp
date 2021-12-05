@@ -56,7 +56,7 @@ namespace ChatServer
             {
                 var connect = _listen.Accept();
 
-                Console.WriteLine("Accept new Connection...");
+                _msg("Accept new Connection...");
 
                 var buffer = new byte[256];
                 var data = new List<byte>();
